@@ -37,8 +37,8 @@ const conf = convict({
     env: 'COMPACTD_COUCH_PORT'
   },
   couchHost: {
-    doc: 'CouchDB host',
-    format: 'ipaddress',
+      doc: "Database host name/IP",
+      format: '*',
     default: '127.0.0.1',
     env: 'COMPACTD_COUCH_HOST'
   },
